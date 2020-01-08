@@ -1,0 +1,10 @@
+<h1>{{ profile.user.first_name }} {{ profile.user.last_name }}</h1>
+<p>{{ profile.profession }}</p>
+<p>{{ profile.phone }}</p>
+<p>{{ profile.user.email }}</p>
+<p>{{ profile.address | linebreaks }}</p>
+<a href="{{ profile.facebook }}" target="blank">facebook-link</a><br>
+<a href="{{ profile.instagram }}" target="blank">instagram-link</a><br>
+<a href="{{ profile.linkedin }}" target="blank">linkedin-link</a>
+<br><br><br>
+<a href="{% url 'app:index' %}">Click here to go to home page</a>

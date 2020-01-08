@@ -1,0 +1,12 @@
+<form class="login-form" method="POST" enctype=multipart/form-data>
+        {% csrf_token %}
+        <h1>You are registered!</h1>
+        <h3>Please fill in the details below to complete your profile.</h3>
+        <label>{{ form.phone }}</label><br>
+        <label>{{ form.profession }}</label><br>
+        <label>{{ form.address }}</label><br>
+        <label>{{ form.facebook }}</label><br>
+        <label>{{ form.instagram }}</label><br>
+        <label>{{ form.linkedin }}</label><br>
+        <label><button type="submit" id='button' name="submit">Complete</button><label>
+</form>
